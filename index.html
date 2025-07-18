@@ -1,71 +1,121 @@
 <!DOCTYPE html>
 <html lang="th">
 <head>
-    <meta charset="UTF-8">
-    <title>ร้านหมูกระทะเชียงใหม่</title>
-    <style>
-        body {
-            font-family: 'Tahoma', sans-serif;
-            background-color: #fffaf0;
-            color: #333;
-            line-height: 1.6;
-            margin: 20px;
-            text-align: center;
-        }
-        .logo {
-            width: 150px;
-            margin-bottom: 20px;
-        }
-        .restaurant {
-            border-bottom: 1px solid #ddd;
-            margin: 30px auto;
-            padding-bottom: 20px;
-            max-width: 800px;
-        }
-        img.food-img {
-            width: 100%;
-            max-width: 600px;
-            height: auto;
-            border-radius: 10px;
-        }
-        h1 {
-            color: #d35400;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <title>เชียงใหม่หมูทะ - ร้านหมูกระทะใกล้ มช.</title>
+  <style>
+    body {
+      font-family: 'Prompt', sans-serif;
+      background-color: #fff8f0;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #d9534f;
+      color: white;
+      padding: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    header img {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      margin-right: 10px;
+    }
+    h1 {
+      font-size: 26px;
+      margin: 0;
+    }
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 30px;
+    }
+    .card {
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      margin: 15px;
+      width: 300px;
+      overflow: hidden;
+      transition: transform 0.2s;
+    }
+    .card:hover {
+      transform: scale(1.03);
+    }
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+    .card-body {
+      padding: 15px;
+    }
+    .card-body h2 {
+      font-size: 20px;
+      margin: 0 0 10px;
+      color: #d9534f;
+    }
+    .card-body p {
+      font-size: 14px;
+      color: #555;
+    }
+  </style>
 </head>
 <body>
 
-    <!-- โลโก้ -->
-    <img src="https://cdn-icons-png.flaticon.com/512/5787/5787076.png" alt="โลโก้หมูกระทะ" class="logo">
+<header>
+  <img src="https://api.dicebear.com/7.x/icons/svg?seed=CMBBQ&backgroundType=gradientLinear&backgroundColor=fb8500,ffb703&radius=50&scale=90" 
+       alt="โลโก้เชียงใหม่หมูทะ">
+  <h1>เชียงใหม่หมูทะ - ใกล้ มช.</h1>
+</header>
 
-    <h1>5 ร้านหมูกระทะที่อร่อยที่สุดในเชียงใหม่</h1>
+<div class="container">
 
-    <div class="restaurant">
-        <h2>1. หมูย่างเกาหลีบ้านไร่</h2>
-        <p>ร้านบรรยากาศบ้าน ๆ ราคาไม่แรง น้ำจิ้มเด็ด หมูนุ่ม เสิร์ฟพร้อมผักสด</p>
-        <img class="food-img" src="https://images.unsplash.com/photo-1598515213886-48b8a520de1b?auto=format&fit=crop&w=800&q=60" alt="หมูกระทะ 1">
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1626947346162-0d93be3e59a3?auto=format&fit=crop&w=800&q=80" alt="หมูทะ U-Bar">
+    <div class="card-body">
+      <h2>1. หมูทะ U-Bar</h2>
+      <p>หมูกระทะบรรยากาศแนวผับ หน้ามช. น้ำจิ้มเด็ด เสิร์ฟไว</p>
     </div>
+  </div>
 
-    <div class="restaurant">
-        <h2>2. หมูกระทะป่าแดด</h2>
-        <p>ร้านดังย่านป่าแดด คนแน่นทุกวัน น้ำซุปหอม เครื่องเคียงครบ</p>
-        <img class="food-img" src="https://images.unsplash.com/photo-1603094993310-b9f8149a94e4?auto=format&fit=crop&w=800&q=60" alt="หมูกระทะ 2">
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1606111803152-dc9b1b4d5a16?auto=format&fit=crop&w=800&q=80" alt="ตี๋น้อยหมูกระทะ">
+    <div class="card-body">
+      <h2>2. ตี๋น้อยหมูกระทะ (สาขา มช.)</h2>
+      <p>ร้านแฟรนไชส์ชื่อดัง เดินจากประตูคณะวิศวะเพียง 3 นาที</p>
     </div>
+  </div>
 
-    <div class="restaurant">
-        <h2>3. หมูกระทะช้างคลาน</h2>
-        <p>ร้านนี้อยู่ย่านไนท์บาซาร์ เนื้อหมูหมักดี มีอาหารทะเลด้วย</p>
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1571304211464-1efeeaae0d2d?auto=format&fit=crop&w=800&q=80" alt="อาเหลียงหมูกระทะ">
+    <div class="card-body">
+      <h2>3. อาเหลียงหมูกระทะ</h2>
+      <p>น้ำซุปหอม หมูหมักนุ่ม น้ำจิ้มรสไทยดั้งเดิม ข้างศาลเด็ก</p>
     </div>
+  </div>
 
-    <div class="restaurant">
-        <h2>4. หมูกระทะคำเที่ยง</h2>
-        <p>ร้านเก่าแก่ในเชียงใหม่ น้ำจิ้มรสเด็ด บรรยากาศแบบโลคอล</p>
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1604908177529-b9d8ae2fc6a7?auto=format&fit=crop&w=800&q=80" alt="รักหมูกระทะ">
+    <div class="card-body">
+      <h2>4. รักหมูกระทะ by รักจัง</h2>
+      <p>ปิ้งย่างริมถนนเลียบคลอง กลางแจ้ง ลมเย็น บรรยากาศดี</p>
     </div>
+  </div>
 
-    <div class="restaurant">
-        <h2>5. หมูกระทะศิริมังคลาจารย์</h2>
-        <p>อยู่ในเมือง เดินทางสะดวก เนื้อสดสะอาด น้ำจิ้มมีให้เลือกหลายแบบ</p>
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1610381762155-3f2c90d51826?auto=format&fit=crop&w=800&q=80" alt="หมูกระทะเจียงใหม่">
+    <div class="card-body">
+      <h2>5. หมูกระทะเจียงใหม่ (เจ็ดยอด)</h2>
+      <p>มีทั้งเตาถ่านและไฟฟ้า หมูนุ่ม น้ำจิ้มหลายแบบ ห่าง มช. ไม่ไกล</p>
     </div>
+  </div>
+
+</div>
 
 </body>
 </html>
